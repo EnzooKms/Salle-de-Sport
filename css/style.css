@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    font-size: 1em;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    background: url('/img/fond.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+
+
+nav * {
+    font-size: 1.5em;
+    font-family: 'Norican';
+    color: white;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul li:nth-child(1)::before {
+    content: url('/img/fire-solid.svg');
+    display: inherit;
+    width: 40px;
+    margin-left: 50px;
+
+    /* pour faire descendre le text de base :) */
+    height: 50px;
+}
+
+nav ul li:nth-child(2)::before {
+    content: url('/img/gears-solid.svg');
+    display: inherit;
+    width: 40px;
+    margin-left: 50px;
+
+    /* pour faire descendre le text de base :) */
+    height: 50px;
+}
+
+nav ul li:nth-child(3)::before {
+    content: url('/img/hand-spock-regular.svg');
+    display: inherit;
+    width: 40px;
+    margin-left: 50px;
+
+    /* pour faire descendre le text de base :) */
+    height: 50px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 50px;
+    text-transform: uppercase;
+}
+
+div p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Coda Caption';
+    position: relative;
+    top: 0%;
+}
+
+div p strong {
+    color: black;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 11%;
+    position: relative;
+    text-transform: capitalize;
+    color: orange;
+    text-align: center;
+    font-family: 'Coda Caption';
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 60px;
+    box-sizing: border-box;
+    text-shadow: 2px 2px#000000;
+}
+
+h1 strong,
+h2 strong,
+h3 strong {
+    color: white;
+    position: absolute;
+    display: block;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-family: 'Norican';
+    text-shadow: 5px 5px #00000000;
+}
+
+main {
+    width: 100%;
+    background-color: #00738d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    width: 100%;
+    font-size: 50px;
+}
+
+h2 strong {
+    font-family: 40px;
+}
+
+iframe {
+    margin-top: 50px;
+    width: 90%;
+    height: 400px;
+}
+
+main article h3 {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+main article h3 strong {
+    font-size: 30px;
+}
+
+main article img {
+    width: 25%;
+}
+
+main article:nth-child(1n) img {
+    float: left;
+}
+
+main article:nth-child(2n) img {
+    float: right;
+}
+
+p {
+    font-family: 'PT sans';
+    font-size: 20px;
+    color: white;
+    position: relative;
+    max-width: 95%;
+    top: 30px;
+    left: 1%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+hr {
+    width: 99.9%;
+}
+
+section {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(17, 16, 18, 1) 0%, rgba(60, 85, 105, 1) 75%, rgba(0, 61, 98, 1) 100%);
+}
+
+section h2 {
+    position: relative;
+    bottom: 100px;
+}
+
+main section {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+main section article h3 {
+    color: white;
+    font-family: 'Norican';
+}
+
+main section article img {
+    width: 40%;
+}
+
+main section article p {
+    text-align: center;
+    font-family: 'PT sans';
+    margin-bottom: 50px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer * {
+    margin-top: 30px;
+}
